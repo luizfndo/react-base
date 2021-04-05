@@ -1,0 +1,39 @@
+.labeled-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+.labeled-icon > .label {
+  display: var(--label-display, block);
+  color: var(--label-color);
+  font-size: var(--label-size, 1rem);
+  font-weight: var(--label-weight, normal);
+  transition: var(--label-transition, inherit);
+}
+
+.labeled-icon > .icon {
+  fill: var(--icon-color);
+  width: var(--icon-size, 1.3em);
+  font-size: var(--label-size, 1rem);
+  transition: var(--icon-transition, inherit);
+}
+
+.labeled-icon > .icon > svg {
+  display: block;
+  fill: inherit;
+  width: inherit;
+}
+
+.labeled-icon.right { flex-direction: row }
+.labeled-icon.right .icon + .label { margin: 0 0 0 var(--gap, 1ch); }
+
+.labeled-icon.bottom { flex-direction: column }
+.labeled-icon.bottom .icon + .label { margin: var(--gap, 1ch) 0 0 0; }
+
+.labeled-icon.left { flex-direction: row-reverse }
+.labeled-icon.left .icon + .label { margin: 0 var(--gap, 1ch) 0 0; }
+
+.labeled-icon.top { flex-direction: column-reverse }
+.labeled-icon.top .icon + .label { margin: 0 0 var(--gap, 1ch) 0; }

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@widgets/*": ["./src/components/widgets/*"],
+      "@fragments/*": ["./src/components/fragments/*"],
+      "@screens/*": ["./src/components/screens/*"],
+      "@contexts": ["./src/contexts.js"]
+    }
+  }
+}

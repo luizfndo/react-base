@@ -1,0 +1,26 @@
+.sidenav {
+  position: fixed;
+  display: grid;
+  grid-template-columns: minmax(320px, 20vw) auto;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.sidenav nav {
+  background-color: white;
+  box-shadow: 5px 0 40px rgb(0 0 0 / 45%);
+}
+
+.sidenav .header {
+  padding: clamp(1ch, 1vw, 3ch);
+}
+
+.sidenav .close-nav {
+  margin-left: auto;
+}
+
+.sidenav .nav-escape-btn { outline: none; }

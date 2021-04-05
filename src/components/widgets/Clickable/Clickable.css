@@ -1,0 +1,27 @@
+.clickable {
+  --label-color: var(--primary-color);
+  --icon-color: var(--primary-color);
+  --label-color-hover: var(--secondary-color);
+  --icon-color-hover: var(--secondary-color);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding, 1ch);
+  width: -moz-fit-content;
+       width: fit-content;
+  user-select: none;
+  color: var(--label-color);
+  font-size: var(--label-size, 1rem);
+  background-color: var(--bg-color, transparent);
+  transition: var(--bg-color-transition, inherit);
+  overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .clickable {
+    --icon-transition: fill 0.3s;
+    --label-transition: color 0.3s;
+  }
+}

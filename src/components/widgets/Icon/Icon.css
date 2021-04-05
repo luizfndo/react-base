@@ -1,0 +1,6 @@
+.icon svg,
+.icon img {
+  display: block;
+  margin: auto;
+  width: inherit;
+}
